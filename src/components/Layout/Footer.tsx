@@ -27,11 +27,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-6">Liên kết nhanh</h3>
             <ul className="space-y-3">
-              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors text-sm">Giới thiệu</Link></li>
+              <li><Link to="/" className="text-gray-300 hover:text-white transition-colors text-sm">Trang chủ</Link></li>
               <li><Link to="/services" className="text-gray-300 hover:text-white transition-colors text-sm">Dịch vụ</Link></li>
               <li><Link to="/projects" className="text-gray-300 hover:text-white transition-colors text-sm">Dự án</Link></li>
-              <li><Link to="/pricing" className="text-gray-300 hover:text-white transition-colors text-sm">Báo giá</Link></li>
-              <li><Link to="/news" className="text-gray-300 hover:text-white transition-colors text-sm">Tin tức</Link></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors text-sm">Giới thiệu</Link></li>
               <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm">Liên hệ</Link></li>
             </ul>
           </div>
@@ -54,7 +53,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-hd-blue-light mt-0.5 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">Thạnh Lỗi - Nội Bài - Hà Nội</span>
+                <span className="text-gray-300 text-sm">Thạnh Lỗi – Nội Bài – Hà Nội</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-hd-blue-light flex-shrink-0" />

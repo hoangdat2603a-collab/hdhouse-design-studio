@@ -29,7 +29,7 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 text-sm">
             <Star className="h-4 w-4 text-yellow-400" />
-            <span>Thiết kế nội thất chuyên nghiệp #1 Việt Nam</span>
+            <span>Công ty thiết kế nội thất uy tín hàng đầu</span>
           </div>
 
           {/* Main Heading */}
@@ -38,8 +38,11 @@ const HeroSection = () => {
               <span className="block">HD HOUSE</span>
               <span className="block text-hd-blue-light">DESIGN</span>
             </h1>
+            <h2 className="text-2xl md:text-3xl text-hd-blue-light font-medium mb-4">
+              Không gian sống – Đẳng cấp thăng hoa
+            </h2>
             <p className="text-xl md:text-2xl text-gray-200 font-light max-w-3xl mx-auto leading-relaxed">
-              Kiến tạo không gian sống đẳng cấp với dịch vụ thiết kế - thi công nội thất trọn gói chuyên nghiệp
+              Kiến tạo không gian sống đẳng cấp với dịch vụ thiết kế - thi công nội thật trọn gói chuyên nghiệp
             </p>
           </div>
 

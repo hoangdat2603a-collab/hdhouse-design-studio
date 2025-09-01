@@ -8,11 +8,12 @@
 
 @layer base {
   :root {
-    /* HD HOUSE Brand Colors - Based on logo */
-    --hd-blue: 217 91% 35%;        /* Main blue from logo */
-    --hd-blue-light: 217 91% 45%;  /* Lighter blue */
-    --hd-blue-dark: 217 91% 25%;   /* Darker blue */
-    --hd-navy: 222 84% 8%;         /* Deep navy */
+    /* HD HOUSE Brand Colors - White, Black, Blue, Ocean Blue theme */
+    --hd-blue: 210 85% 45%;        /* Main brand blue */
+    --hd-blue-light: 200 85% 55%;  /* Light blue accent */
+    --hd-blue-dark: 210 85% 35%;   /* Dark blue for depth */
+    --hd-navy: 210 30% 15%;        /* Navy for professional touch */
+    --hd-ocean: 195 85% 45%;       /* Ocean blue variant */
     --hd-gray: 215 20% 20%;        /* Professional gray */
     --hd-gray-light: 215 15% 90%;  /* Light gray */
 
@@ -26,16 +27,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 84% 8%;
 
-    --primary: 217 91% 35%;
+    --primary: 210 85% 45%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 215 15% 95%;
-    --secondary-foreground: 222 84% 8%;
+    --secondary-foreground: 210 30% 15%;
 
     --muted: 215 15% 95%;
     --muted-foreground: 215 20% 45%;
 
-    --accent: 217 91% 35%;
+    --accent: 210 85% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,7 +44,7 @@
 
     --border: 215 15% 90%;
     --input: 215 15% 90%;
-    --ring: 217 91% 35%;
+    --ring: 210 85% 45%;
 
     --radius: 0.75rem;
 
@@ -51,6 +52,7 @@
     --gradient-primary: linear-gradient(135deg, hsl(var(--hd-blue)), hsl(var(--hd-blue-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--hd-navy)), hsl(var(--hd-blue-dark)));
     --gradient-accent: linear-gradient(90deg, hsl(var(--hd-blue) / 0.1), transparent);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--hd-blue) / 0.02));
 
     /* Shadows */
     --shadow-elegant: 0 20px 40px -10px hsl(var(--hd-blue) / 0.2);

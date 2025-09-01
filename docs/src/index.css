@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* HD HOUSE Design System - Professional Interior Design Theme */
+
+@layer base {
+  :root {
+    /* HD HOUSE Brand Colors - White, Black, Blue, Ocean Blue theme */
+    --hd-blue: 210 85% 45%;        /* Main brand blue */
+    --hd-blue-light: 200 85% 55%;  /* Light blue accent */
+    --hd-blue-dark: 210 85% 35%;   /* Dark blue for depth */
+    --hd-navy: 210 30% 15%;        /* Navy for professional touch */
+    --hd-ocean: 195 85% 45%;       /* Ocean blue variant */
+    --hd-gray: 215 20% 20%;        /* Professional gray */
+    --hd-gray-light: 215 15% 90%;  /* Light gray */
+
+    /* Core theme colors */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 84% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 8%;
+
+    --primary: 210 85% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 15% 95%;
+    --secondary-foreground: 210 30% 15%;
+
+    --muted: 215 15% 95%;
+    --muted-foreground: 215 20% 45%;
+
+    --accent: 210 85% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 215 15% 90%;
+    --input: 215 15% 90%;
+    --ring: 210 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* HD HOUSE Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--hd-blue)), hsl(var(--hd-blue-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hd-navy)), hsl(var(--hd-blue-dark)));
+    --gradient-accent: linear-gradient(90deg, hsl(var(--hd-blue) / 0.1), transparent);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--hd-blue) / 0.02));
+
+    /* Shadows */
+    --shadow-elegant: 0 20px 40px -10px hsl(var(--hd-blue) / 0.2);
+    --shadow-soft: 0 4px 20px hsl(var(--hd-blue) / 0.1);
+    --shadow-card: 0 8px 32px hsl(var(--hd-blue) / 0.08);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-fast: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .dark {
+    --background: 222 84% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 222 84% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 222 84% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 217 91% 45%;
+    --primary-foreground: 222 84% 4%;
+
+    --secondary: 222 84% 12%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 222 84% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 91% 45%;
+    --accent-foreground: 222 84% 4%;
+
+    --border: 222 84% 15%;
+    --input: 222 84% 15%;
+    --ring: 217 91% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

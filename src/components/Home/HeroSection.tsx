@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Star } from "lucide-react";
 import heroImage from "@/assets/hero-interior-1.jpg";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="HD HOUSE - Thiết kế nội thất chuyên nghiệp" 
-          className="w-full h-full object-cover"
-        />
+        <img src={heroImage} alt="HD HOUSE - Thiết kế nội thất chuyên nghiệp" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-hero opacity-80"></div>
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
@@ -53,7 +47,7 @@ const HeroSection = () => {
               <p className="text-sm text-gray-300">Tư vấn và thiết kế 3D không tính phí</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <h3 className="font-semibold mb-2">Giá từ 150K/m²</h3>
+              <h3 className="font-semibold mb-2">Giá từ 250K/m²</h3>
               <p className="text-sm text-gray-300">Chi phí thi công minh bạch, cạnh tranh</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
@@ -64,18 +58,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Button 
-              size="lg" 
-              className="bg-hd-blue hover:bg-hd-blue-dark text-white px-8 py-4 h-auto group"
-            >
+            <Button size="lg" className="bg-hd-blue hover:bg-hd-blue-dark text-white px-8 py-4 h-auto group">
               <span className="mr-2">Đăng ký tư vấn miễn phí</span>
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="border-white/30 text-white hover:bg-white hover:text-hd-navy px-8 py-4 h-auto"
-            >
+            <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white hover:text-hd-navy px-8 py-4 h-auto">
               <Phone className="h-5 w-5 mr-2" />
               <span>0969 620 037</span>
             </Button>
@@ -105,8 +92,6 @@ const HeroSection = () => {
           <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
